@@ -1,0 +1,239 @@
+/* styles/portfolio.css */
+
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #fdfcfb;
+    color: #333;
+}
+
+h1, h2, h3 {
+    color: #1e1b2e;
+    text-align: center;
+}
+
+nav {
+    background-color: #a69ae3;
+    color: white;
+    padding: 14px 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #4c3f91;
+}
+
+.hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #f8f6ff, #ffffff);
+    flex-wrap: wrap;
+    gap: 40px;
+    text-align: left;
+}
+
+.hero-left {
+    max-width: 500px;
+}
+
+.hero h1 {
+    font-size: 3em;
+    color: #4c3f91;
+}
+
+.hero h2 {
+    font-size: 1.6em;
+    color: #000000;
+    margin-bottom: 20px;
+    font-weight: 900;
+}
+
+.hero .about-btn {
+    background-color: #a69ae3;
+    color: rgb(0, 0, 0);
+    padding: 12px 30px;
+    margin-left: 160px;
+    border: none;
+    border-radius: 30px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
+
+.hero .about-btn:hover {
+    background-color: #28204d;
+    color: white;
+}
+
+.hero .socials {
+    margin-top: 24px;
+    display: flex;
+    gap: 20px;
+    justify-content: flex-start;
+    margin-left: 140px;
+}
+
+.hero .socials a {
+    color: #4c3f91;
+    font-size: 1.4em;
+    transition: color 0.3s ease;
+}
+
+.hero .socials a:hover {
+    color: #1e1b2e;
+}
+
+.hero-right .card {
+    border: none;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-img-top {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0;
+}
+
+section {
+    padding: 60px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+section h2 {
+    margin-bottom: 40px;
+    font-size: 2em;
+    color: #1e1b2e;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+section p {
+    max-width: 850px;
+    margin: 0 auto 40px auto;
+    font-size: 1.1em;
+    color: #555;
+    text-align: center;
+    animation: fadeInUp 1s ease;
+}
+
+section ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+section ul li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 16px;
+    width: 220px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.3s;
+    animation: fadeInUp 0.8s ease;
+}
+
+section ul li:hover {
+    transform: translateY(-5px);
+}
+
+section .work-list,
+section .exp-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 24px;
+}
+
+section .work-card,
+section .exp-card {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: transform 0.3s;
+    animation: fadeInUp 0.8s ease;
+}
+
+section .work-card:hover,
+section .exp-card:hover {
+    transform: translateY(-5px);
+}
+
+section .exp-card strong {
+    font-size: 1.1em;
+    color: #4c3f91;
+    margin-bottom: 5px;
+}
+
+section .exp-card span {
+    color: #888;
+    font-size: 0.95em;
+}
+
+footer {
+    text-align: center;
+    padding: 24px;
+    background-color: #1e1b2e;
+    color: white;
+    font-size: 0.95em;
+    margin-top: 40px;
+}
+
+footer p {
+    margin: 0;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
